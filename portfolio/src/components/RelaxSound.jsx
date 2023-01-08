@@ -32,7 +32,7 @@ const RelaxSound = () => {
       animate={{ x: 95 }}
       transition={{ duration: 0.5 }}
       whileHover={{ x: 0 }}
-      className="bg-black p-4 rounded-lg absolute -right-3 top-10 cursor-pointer border-white border z-50 hidden sm:block"
+      className="bg-black p-4 rounded-lg fixed -right-3 top-10 cursor-pointer border-white border z-50 hidden sm:block"
     >
       <div className={styles.triangulo}></div>
       <div className="flex justify-center">

@@ -8,7 +8,7 @@ const XHeader = () => {
   const {pathname} = useLocation()
 
   return (
-    <header className="sm:hidden z-50">
+    <header className="sm:hidden z-50 fixed w-full">
       <nav className="text-white bg-neutral-900 p-2">
         <ul className="flex justify-center gap-4">
           <motion.li

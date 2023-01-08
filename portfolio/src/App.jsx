@@ -10,7 +10,6 @@ import XHeader from "./components/XHeader";
 
 function App() {
   const location = useLocation();
-  console.log(window.innerWidth);
 
   return (
     <div className="h-screen relative text-white">

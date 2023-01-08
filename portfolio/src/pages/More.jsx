@@ -1,23 +1,19 @@
 import React from "react";
 import { motion } from "framer-motion";
-
-const abilities = [
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/640px-Postgresql_elephant.svg.png",
-  "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png",
-  "https://midu.dev/images/tags/node.png",
-  "https://assets.website-files.com/61ca3f775a79ec5f87fcf937/6202fcdee5ee8636a145a41b_1234.png",
-  "https://assets.stickpng.com/images/58482ee4cef1014c0b5e4a75.png",
-  "https://api.civo.com/k3s-marketplace/mongodb.png",
-  "https://assets.stickpng.com/images/5848309bcef1014c0b5e4a9a.png",
-  "https://avatars.githubusercontent.com/u/18133?s=200&v=4",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1024px-Tailwind_CSS_Logo.svg.png",
-  "https://static-00.iconduck.com/assets.00/typescript-plain-icon-256x256-ypojgpyj.png",
-  "https://firebase.google.com/static/downloads/brand-guidelines/PNG/logo-vertical.png?hl=es-419",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1280px-Bootstrap_logo.svg.png",
-  "https://i.postimg.cc/vTkGR0jV/html5.png",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png",
-];
+import javascript from "../imgs/javascript.png";
+import redux from "../imgs/redux.png";
+import bootstrap from "../imgs/bootstrap.png";
+import mongo from "../imgs/mongo.png";
+import git from "../imgs/git.png";
+import node from "../imgs/node.png";
+import firebase from "../imgs/firebase.png";
+import express from "../imgs/express.png";
+import ts from "../imgs/ts.png";
+import html from "../imgs/html.png";
+import tailwind from "../imgs/tailwind.png";
+import css from "../imgs/css.png";
+import react from "../imgs/react.png";
+import postgrest from "../imgs/postgres.png";
 
 const More = () => {
   return (
@@ -37,39 +33,111 @@ const More = () => {
       transition={{ duration: 0.4 }}
       className="relative h-screen w-full"
     >
-      <div className="absolute h-screen w-full flex justify-center items-center bg-black opacity-90 backdrop-filter">
-        <h1 className="text-red-700 font-bold text-5xl opacity-100">
-          Still in process...
-          <br />
-          <span className="text-xl block text-center">(aún en proceso)</span>
-        </h1>
-      </div>
-
-      <div className="flex justify-around h-screen items-center flex-col-reverse md:flex-row">
-        <div className="w-1/2 flex flex-wrap justify-center gap-7 ml-12">
-          {abilities.map((ability, index) => (
+      <div className="flex justify-center text-center h-screen items-center flex-col-reverse sm:flex-row sm:gap-20">
+        <div className="p-88 flex flex-wrap justify-center gap-5 sm:gap-7 sm:ml-12 mb-16 w-1/2">
+          <div className="flex flex-col gap-5">
             <motion.img
-              initial={{ x: 100 }}
-              animate={{ x: 0 }}
-              transition={{ duration: `${0}.${index}000` }}
-              src={ability}
-              key={index}
-              alt={`imagen ${index}`}
-              className="h-16 md:h-24"
+              src={postgrest}
+              alt="post"
+              className="w-10 sm:w-16 lg:w-20 object-contain"
             />
-          ))}
+            <motion.img
+              src={javascript}
+              alt="tech"
+              className="w-10 sm:w-16 lg:w-20 object-contain"
+            />
+            <motion.img
+              src={redux}
+              alt="tech"
+              className="w-10 object-contain sm:w-16 lg:w-20"
+            />
+            <motion.img
+              src={bootstrap}
+              alt="tech"
+              className="w-10 object-contain sm:w-16 lg:w-20"
+            />
+          </div>
+          <div className="flex flex-col gap-5">
+            <motion.img
+              src={mongo}
+              alt="tech"
+              className="w-10 sm:w-16 lg:w-20 object-contain"
+            />
+            <motion.img
+              src={git}
+              alt="tech"
+              className="w-10 sm:w-16 lg:w-20 object-contain"
+            />
+            <motion.img
+              src={firebase}
+              alt="tech"
+              className="w-10 sm:w-16 lg:w-20 object-contain"
+            />
+            <motion.img
+              src={node}
+              alt="tech"
+              className="w-10  sm:w-16 lg:w-20 object-contain"
+            />
+          </div>
+          <div className="flex flex-col gap-5">
+            <motion.img
+              src={express}
+              alt="tech"
+              className="w-10 sm:w-16 lg:w-20 object-contain"
+            />
+            <motion.img
+              src={ts}
+              alt="tech"
+              className="w-10 sm:w-16 lg:w-20 object-contain"
+            />
+            <motion.img
+              src={html}
+              alt="tech"
+              className="w-10 sm:w-16 lg:w-20 object-contain"
+            />
+
+            <motion.img
+              src={tailwind}
+              alt="tech"
+              className="w-10 sm:w-16 lg:w-20 object-contain"
+            />
+          </div>
+
+          <div className="flex gap-5">
+            <motion.img
+              src={css}
+              alt="tech"
+              className="w-10 sm:w-16 lg:w-20 object-contain"
+            />
+            <motion.img
+              src={react}
+              alt="tech"
+              className="w-10 sm:w-16 lg:w-20 object-contain"
+            />
+          </div>
         </div>
 
-        <div className="mr-10">
-          <h1 className="text-5xl font-semibold mb-4">Mis habilidades</h1>
-          <p>
+        <div className="sm:mr-20 mb-10">
+          <motion.h1
+            initial={{ x: -50 }}
+            animate={{ x: 0 }}
+            transition={{ duration: 0.4, delay: 0.6 }}
+            className="text-3xl sm:text-5xl font-semibold mb-4 text-amber-400"
+          >
+            Mis habilidades
+          </motion.h1>
+          <motion.p
+            className="text-sm sm:text-xl"
+            initial={{ x: 50 }}
+            animate={{ x: 0 }}
+            transition={{ duration: 0.4, delay: 0.6 }}
+          >
             Soy Full Stack en programacion manejo bases <br /> de datos SQL y
             NoSQL arientandome a ambas <br /> ramas con 60% Front-end y 40%
             Backend
-          </p>
+          </motion.p>
         </div>
       </div>
-      
     </motion.div>
   );
 };

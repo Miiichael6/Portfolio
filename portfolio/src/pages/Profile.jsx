@@ -1,34 +1,38 @@
 import React from "react";
 import { motion } from "framer-motion";
-import peru from "../imgs/peru_flag.png";
+// import peru from "../imgs/peru_flag.png";
+import styles from "../styles/Profile.module.css";
+import findYourTeacher from "../imgs/findYourTeacher.png";
+import { BsYoutube } from "react-icons/bs";
+import ProyectCard from "../components/ProyectCard";
 
 const Profile = () => {
   return (
     <motion.div
       initial={{
         opacity: 0,
-        y: "-100vh",
+        // x: "-100vh",
+        x: "-100vh",
       }}
       animate={{
         opacity: 1,
-        y: "0vh",
+        x: "0vh",
       }}
       exit={{
         opacity: 0,
         y: "110vh",
       }}
       transition={{ duration: 0.4 }}
-      className="relative h-screen w-full flex justify-center items-center"
+      className={`relative w-full overflow-auto ${styles.scrollbar} overflow-x-hidden`}
     >
-      <div className="pl-8">
-        <h1 className="text-5xl font-bold md:text-6xl mb-7 from-green-400 to-blue-600 text-transparent h-20 bg-clip-text bg-gradient-to-r hover:scale-110 transition-transform cursor-pointer">
+      <div className="sm:pl-8 p-4 mt-20 sm:mt-0">
+        <h1 className="text-4xl font-bold md:text-6xl from-green-400 to-blue-600 text-transparent h-20 bg-clip-text bg-gradient-to-r hover:translate-x-12 transition-transform cursor-pointer">
           ¿Quién Soy?
         </h1>
-        <p className="text-lg">
-          <span className="px-1 font-bold text-xl" >¡Saludos!👋🏻</span>
+        <p className="sm:text-base">
+          <span className="px-1 font-bold text-xl">¡Saludos!👋🏻</span>
           Me llamo Michael Canales Palomino,soy de{" "}
           <span className="font-bold">Lima, Perú</span>
-          <img src={peru} alt="peru" className="ml-3 w-10 inline" />
           <br />
           conocí la programacion a los 17 y quedé maravillado de este mundo
           <br />
@@ -38,6 +42,20 @@ const Profile = () => {
           </span>
           orientado a Front-end
         </p>
+
+        <h1
+          transition={{ duration: 0.4, delay: 0.3 }}
+          className="text-4xl mt-5 font-bold md:text-5xl from-pink-400 to-red-600 text-transparent h-20 bg-clip-text bg-gradient-to-r cursor-pointer text-center sm:text-4xl"
+        >
+          Mis Proyectos
+        </h1>
+        <div className="w-full p-6 bg-zinc-900 rounded-md flex flex-wrap">
+          <ProyectCard photo={findYourTeacher} />
+          <ProyectCard photo={findYourTeacher} />
+          <ProyectCard photo={findYourTeacher} />
+          <ProyectCard photo={findYourTeacher} />
+          <ProyectCard photo={findYourTeacher} />
+        </div>
       </div>
     </motion.div>
   );

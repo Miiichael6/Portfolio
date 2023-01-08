@@ -32,7 +32,7 @@ const Home = () => {
           </p>
           <div className={styles.container}>
             <div
-              className={`sm:text-5xl lg:text-7xl text-4xl ${styles.typed_out}`}
+              className={`sm:text-6xl lg:text-7xl text-5xl ${styles.typed_out}`}
             >
               Full Stack <br /> Web Developer
             </div>
