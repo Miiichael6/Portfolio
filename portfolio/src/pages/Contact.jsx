@@ -18,8 +18,18 @@ const Contact = () => {
         y: "110vh",
       }}
       transition={{ duration: .4 }}
+      className="relative h-screen w-full"
     >
-      Contacttttttttttttt
+       <div className="fixed h-screen w-full flex justify-center items-center bg-black opacity-80 text-center">
+        <h1 className="text-red-700 font-bold text-5xl opacity-100">
+          Still in process...
+          <br />
+          <span className="text-xl block text-center">(aún en proceso)</span>
+        </h1>
+      </div>
+
+      
+
     </motion.div>
   );
 };

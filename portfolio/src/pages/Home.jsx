@@ -31,7 +31,9 @@ const Home = () => {
             Soy Michael
           </p>
           <div className={styles.container}>
-            <div className={`lg:text-7xl text-6xl ${styles.typed_out}`}>
+            <div
+              className={`sm:text-5xl lg:text-7xl text-4xl ${styles.typed_out}`}
+            >
               Full Stack <br /> Web Developer
             </div>
           </div>
@@ -40,42 +42,11 @@ const Home = () => {
           <img
             src={michael}
             alt="michael"
-            className="w-64 h-64 rounded-full object-cover"
+            className="w-40 h-40 sm:w-64 sm:h-64 rounded-full object-cover"
           />
-          <>
-            <motion.hr
-              initial={{ y: 10 }}
-              animate={{ y: 0 }}
-              transition={{ duration: 0.9, delay: 1 }}
-              className="mt-5"
-            />
-            <motion.hr
-              className="w-5/6 mt-4 mx-auto"
-              initial={{ y: 10 }}
-              animate={{ y: 0 }}
-              transition={{ duration: 0.8, delay: 0.5 }}
-            />
-            <motion.hr
-              initial={{ y: 10 }}
-              animate={{ y: 0 }}
-              transition={{ duration: 0.6, delay: 0.5 }}
-              className="w-4/6 mt-4 mx-auto"
-            />
-            <motion.hr
-              initial={{ y: 10 }}
-              animate={{ y: 0 }}
-              transition={{ duration: 0.4, delay: 0.5 }}
-              className="w-3/6 mt-4 mx-auto"
-            />
-            <motion.hr
-              initial={{ y: 10 }}
-              animate={{ y: 0 }}
-              transition={{ duration: 0.2, delay: 0.3 }}
-              className="w-2/6 mt-4 mx-auto"
-            />
-          </>
+          
         </div>
-        <div className="absolute bottom-6 left-1/3 flex items-center gap-6 cursor-pointer">
+        <div className="hidden absolute bottom-3 left-1/3 sm:flex items-center gap-6 cursor-pointer">
           <div className="flex gap-2">
             <IoMdMail className="text-2xl text-teal-900" />
             <p className="text-cyan-500">cdlsmichael.16@gmail.com</p>

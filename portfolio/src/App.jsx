@@ -2,16 +2,19 @@ import { AnimatePresence } from "framer-motion";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Header from "./components/Header";
 import RelaxSound from "./components/RelaxSound";
-import About from "./pages/About";
+import More from "./pages/More";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Profile from "./pages/Profile";
+import XHeader from "./components/XHeader";
 
 function App() {
   const location = useLocation();
+  console.log(window.innerWidth);
 
   return (
     <div className="h-screen relative text-white">
+      <XHeader />
       <Header />
 
       <RelaxSound />
@@ -21,7 +24,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/About" element={<About />} />
+            <Route path="/more" element={<More />} />
           </Routes>
         </AnimatePresence>
       </div>

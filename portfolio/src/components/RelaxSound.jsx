@@ -32,12 +32,16 @@ const RelaxSound = () => {
       animate={{ x: 95 }}
       transition={{ duration: 0.5 }}
       whileHover={{ x: 0 }}
-      className="bg-black p-4 rounded-lg absolute -right-3 top-10 cursor-pointer border-white border z-50"
+      className="bg-black p-4 rounded-lg absolute -right-3 top-10 cursor-pointer border-white border z-50 hidden sm:block"
     >
       <div className={styles.triangulo}></div>
       <div className="flex justify-center">
         {isPlay ? (
-          <img src={takako} alt="takako-album-love-trip" className={`w-12 h-12  ${styles.disco} mb-1`} />
+          <img
+            src={takako}
+            alt="takako-album-love-trip"
+            className={`w-12 h-12  ${styles.disco} mb-1`}
+          />
         ) : (
           <span className="text-black p-3">-</span>
         )}

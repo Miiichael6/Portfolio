@@ -1,46 +1,21 @@
-import React, { useEffect, useState } from "react";
-import { AiFillHome, AiOutlineInfoCircle } from "react-icons/ai";
-import { BsLinkedin, BsPersonFill, BsPlusCircleFill } from "react-icons/bs";
-import { Link, useLocation } from "react-router-dom";
+import React from "react";
 import { motion } from "framer-motion";
-import styles from "../styles/TextShadow.module.css";
-import { VscGithubInverted } from "react-icons/vsc";
-import michael from "../imgs/michael.jpeg";
+import { AiFillHome, AiOutlineInfoCircle } from "react-icons/ai";
+import { BsPersonFill, BsPlusCircleFill } from "react-icons/bs";
+import { Link, useLocation } from "react-router-dom";
 
-const Header = () => {
-  const { pathname } = useLocation();
-  const [animateHeader, setAnimateHeader] = useState({ x: 0 });
-
-  useEffect(() => {
-    setTimeout(() => {
-      setAnimateHeader({ x: -60 });
-    }, 6000);
-  }, []);
+const XHeader = () => {
+  const {pathname} = useLocation()
 
   return (
-    <motion.header
-      className="h-screen w-20 sm:flex flex-col justify-between items-center pb-20 pt-10 px-2 absolute border-r-2 cursor-pointer z-50 hidden"
-      style={{ backgroundColor: "#0F0F0F" }}
-      initial={{ x: 0 }}
-      animate={animateHeader}
-      transition={{ duration: 0.4 }}
-      whileHover={{ x: 0 }}
-    >
-      <div>
-        <motion.img
-          src={michael}
-          alt="logo"
-          className="rounded-full w-16 h-16 object-cover object-center"
-          whileHover={{ scale: 4, x: 70, y: 50 }}
-        />
-      </div>
-      <nav className="text-white bg-neutral-900 p-2 rounded-full">
-        <ul>
+    <header className="sm:hidden z-50">
+      <nav className="text-white bg-neutral-900 p-2">
+        <ul className="flex justify-center gap-4">
           <motion.li
             initial={{}}
             transition={{ type: "spring", duration: 0.3 }}
-            className="my-7 p-1"
             whileHover={{ scale: 1.2, rotate: 20 }}
+            className="my-3 p-1"
           >
             <Link to="/">
               <AiFillHome
@@ -52,7 +27,8 @@ const Header = () => {
           </motion.li>
           <motion.li
             transition={{ type: "spring", duration: 0.3 }}
-            className="my-7 p-1"
+            className="my-3 p-1"
+            
             whileHover={{ scale: 1.2, rotate: 20 }}
           >
             <Link to="/more">
@@ -67,7 +43,7 @@ const Header = () => {
           </motion.li>
           <motion.li
             transition={{ type: "spring", duration: 0.3 }}
-            className="my-7 p-1"
+            className="my-3 p-1"
             whileHover={{ scale: 1.2, rotate: 20 }}
           >
             <Link to="/profile">
@@ -82,7 +58,7 @@ const Header = () => {
           </motion.li>
           <motion.li
             transition={{ type: "spring", duration: 0.3 }}
-            className="my-7 p-1"
+            className="my-3 p-1"
             whileHover={{ scale: 1.2, rotate: 20 }}
           >
             <Link to="/contact">
@@ -97,23 +73,8 @@ const Header = () => {
           </motion.li>
         </ul>
       </nav>
-      <div className="flex flex-col gap-6">
-        <span className="text-3xl hover:text-pink-500 transition-colors">
-          <a href="https://github.com/Miiichael6" target="_blank">
-            <VscGithubInverted />
-          </a>
-        </span>
-        <span className="text-3xl hover:text-cyan-700 transition-colors">
-          <a
-            href="https://www.linkedin.com/in/michael-canales-665235236/"
-            target="_blank"
-          >
-            <BsLinkedin />
-          </a>
-        </span>
-      </div>
-    </motion.header>
+    </header>
   );
 };
 
-export default Header;
+export default XHeader;
