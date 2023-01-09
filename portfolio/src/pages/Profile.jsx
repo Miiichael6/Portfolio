@@ -22,7 +22,7 @@ const Profile = () => {
         opacity: 0,
         y: "110vh",
       }}
-      transition={{ duration: 0.4 }}
+      transition={{ type:"spring",duration: 0.4 }}
       className={`relative w-full overflow-auto ${styles.scrollbar} overflow-x-hidden`}
     >
       <div className="sm:pl-8 p-4 mt-20 sm:mt-0">

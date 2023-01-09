@@ -19,7 +19,9 @@ const Header = () => {
 
   return (
     <header
-      className={`h-screen w-20 sm:flex flex-col justify-between items-center pb-20 pt-10 px-2 fixed border-r-2 cursor-pointer z-50 hidden bg-black ${animateHeader && styles.hoverHeader}`}
+      className={`h-screen w-20 sm:flex flex-col justify-between items-center pb-20 pt-10 px-2 fixed border-r-2 cursor-pointer z-50 hidden bg-black ${
+        animateHeader && styles.hoverHeader
+      }`}
       // style={{ backgroundColor: "#0F0F0F" }}
       // initial={{ x: 0 }}
       // animate={animateHeader}
