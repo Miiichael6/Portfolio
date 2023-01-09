@@ -22,7 +22,7 @@ const Profile = () => {
         opacity: 0,
         y: "110vh",
       }}
-      transition={{ type:"spring",duration: 0.4 }}
+      transition={{ type: "spring", duration: 0.4 }}
       className={`relative w-full overflow-auto ${styles.scrollbar} overflow-x-hidden`}
     >
       <div className="sm:pl-8 p-4 mt-20 sm:mt-0">
@@ -31,7 +31,7 @@ const Profile = () => {
         </h1>
         <p className="sm:text-base">
           <span className="px-1 font-bold text-xl">¡Saludos!👋🏻</span>
-          Me llamo Michael Canales Palomino,soy de{" "}
+          Soy Michael Canales Palomino, soy de{" "}
           <span className="font-bold">Lima, Perú</span>
           <br />
           conocí la programacion a los 17 y quedé maravillado de este mundo
@@ -40,7 +40,9 @@ const Profile = () => {
           <span className="font-bold px-2 from-pink-400 to-red-400 text-transparent h-20 bg-clip-text bg-gradient-to-r">
             Full-Stack
           </span>
-          orientado a Front-end
+          orientado a Front-end <br /> si estas aqui es porque seguro te
+          interesaste ver mi Portfolio <br /> y Agradezco el tiempo que te
+          quedes aquí ⚔
         </p>
 
         <h1
@@ -50,11 +52,9 @@ const Profile = () => {
           Mis Proyectos
         </h1>
         <div className="w-full p-6 bg-zinc-900 rounded-md flex flex-wrap">
-          <ProyectCard photo={findYourTeacher} />
-          <ProyectCard photo={findYourTeacher} />
-          <ProyectCard photo={findYourTeacher} />
-          <ProyectCard photo={findYourTeacher} />
-          <ProyectCard photo={findYourTeacher} />
+          <ProyectCard photo={findYourTeacher} title="Find-Your-Teacher" />
+          <ProyectCard photo={findYourTeacher} title="Amazing Proyects" />
+          <ProyectCard photo={findYourTeacher} title="DaBestCountriesApp" />
         </div>
       </div>
     </motion.div>
