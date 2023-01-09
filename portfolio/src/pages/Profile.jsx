@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 // import peru from "../imgs/peru_flag.png";
 import styles from "../styles/Profile.module.css";
 import findYourTeacher from "../imgs/findYourTeacher.png";
-import { BsYoutube } from "react-icons/bs";
 import ProyectCard from "../components/ProyectCard";
+import proyectos from "../javascript/projects.js";
 
 const Profile = () => {
   return (
@@ -52,9 +52,14 @@ const Profile = () => {
           Mis Proyectos
         </h1>
         <div className="w-full p-6 bg-zinc-900 rounded-md flex flex-wrap">
-          <ProyectCard photo={findYourTeacher} title="Find-Your-Teacher" />
-          <ProyectCard photo={findYourTeacher} title="Amazing Proyects" />
-          <ProyectCard photo={findYourTeacher} title="DaBestCountriesApp" />
+          {proyectos.map((project) => (
+            <ProyectCard
+              title={project.title}
+              photo={project.img}
+              description={project.description}
+              link={project.link}
+            />
+          ))}
         </div>
       </div>
     </motion.div>
