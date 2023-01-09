@@ -34,7 +34,7 @@ const More = () => {
       className="relative h-screen w-full"
     >
       <div className="flex justify-center text-center h-screen items-center flex-col-reverse sm:flex-row sm:gap-20">
-        <div className="p-88 flex flex-wrap justify-center gap-5 sm:gap-7 sm:ml-12 mb-16 w-1/2">
+        <div className="p-88 flex flex-wrap justify-center gap-5 sm:gap-7 sm:ml-12 w-1/2">
           <div className="flex flex-col gap-5">
             <motion.img
               src={postgrest}
@@ -103,7 +103,7 @@ const More = () => {
             />
           </div>
 
-          <div className="flex gap-5">
+          <div className="flex flex-col gap-5">
             <motion.img
               src={css}
               alt="tech"
@@ -132,9 +132,9 @@ const More = () => {
             animate={{ x: 0 }}
             transition={{ duration: 0.4, delay: 0.6 }}
           >
-            Soy Full Stack en programacion manejo bases <br /> de datos SQL y
-            NoSQL arientandome a ambas <br /> ramas con 60% Front-end y 40%
-            Backend
+            Soy Full Stack en programacion manejo bases <br />
+            de datos SQL y NoSQL arientandome a ambas <br />
+            ramas con 60% Front-end y 40% Backend
           </motion.p>
         </div>
       </div>

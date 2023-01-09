@@ -9,22 +9,22 @@ import michael from "../imgs/michael.jpeg";
 
 const Header = () => {
   const { pathname } = useLocation();
-  const [animateHeader, setAnimateHeader] = useState({ x: 0 });
+  const [animateHeader, setAnimateHeader] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
-      setAnimateHeader({ x: -60 });
+      setAnimateHeader(true);
     }, 6000);
   }, []);
 
   return (
-    <motion.header
-      className="h-screen w-20 sm:flex flex-col justify-between items-center pb-20 pt-10 px-2 fixed border-r-2 cursor-pointer z-50 hidden"
-      style={{ backgroundColor: "#0F0F0F" }}
-      initial={{ x: 0 }}
-      animate={animateHeader}
-      transition={{ duration: 0.4 }}
-      whileHover={{ x: 0 }}
+    <header
+      className={`h-screen w-20 sm:flex flex-col justify-between items-center pb-20 pt-10 px-2 fixed border-r-2 cursor-pointer z-50 hidden bg-black ${animateHeader && styles.hoverHeader}`}
+      // style={{ backgroundColor: "#0F0F0F" }}
+      // initial={{ x: 0 }}
+      // animate={animateHeader}
+      // transition={{ duration: 0.4 }}
+      // whileHover={{ x: 0 }}
     >
       <div>
         <motion.img
@@ -112,7 +112,7 @@ const Header = () => {
           </a>
         </span>
       </div>
-    </motion.header>
+    </header>
   );
 };
 

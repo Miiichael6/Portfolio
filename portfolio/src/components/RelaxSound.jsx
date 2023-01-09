@@ -27,13 +27,7 @@ const RelaxSound = () => {
   };
 
   return (
-    <motion.div
-      initial={{ x: 0 }}
-      animate={{ x: 95 }}
-      transition={{ duration: 0.5 }}
-      whileHover={{ x: 0 }}
-      className="bg-black p-4 rounded-lg fixed -right-3 top-10 cursor-pointer border-white border z-50 hidden sm:block"
-    >
+    <div className="bg-black p-4 rounded-lg fixed -right-3 top-10 cursor-pointer border-white border z-50 hidden sm:block translate-x-24 hover:-translate-x-3 transition-transform duration-500">
       <div className={styles.triangulo}></div>
       <div className="flex justify-center">
         {isPlay ? (
@@ -59,7 +53,7 @@ const RelaxSound = () => {
           </span>
         </button>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
