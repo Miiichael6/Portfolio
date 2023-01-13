@@ -52,14 +52,18 @@ const Profile = () => {
           Mis Proyectos
         </h1>
         <div className="w-full p-6 bg-zinc-900 rounded-md flex flex-wrap">
-          {proyectos.map((project) => (
-            <ProyectCard
-              title={project.title}
-              photo={project.img}
-              description={project.description}
-              link={project.link}
-            />
-          ))}
+          {proyectos.map((project, index) => {
+            return (
+              <ProyectCard
+                key={index}
+                title={project.title}
+                photo={project.img}
+                description={project.description}
+                link={project.link}
+                gitRepo={project.gitRepo}
+              />
+            );
+          })}
         </div>
       </div>
     </motion.div>
