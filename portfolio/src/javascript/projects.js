@@ -1,5 +1,6 @@
 import fyt from "../imgs/findYourTeacher.png";
 import countriesApp from "../imgs/countriesApp.png";
+import amazingProjects from "../imgs/amazing.png";
 
 const projects = [
   {
@@ -23,13 +24,13 @@ const projects = [
     gitRepo: "https://github.com/Miiichael6/My-Proyecto-Countries",
   },
   {
-    img: fyt,
+    img: amazingProjects,
     title: "Amazing Proyects",
     description:
       "Administrador, creador de proyectos con autenticacion, agregar colaboradores, completar tareas, buscarlos, etc...",
     descriptionEN:
       "Administrator, creator of projects with authentication, add collaborators, complete tasks, search for them, etc...",
-    link: "https://youtu.be/PblFXtmDjss",
+    link: "https://youtu.be/S7n1QsrAHQk",
     gitRepo: "https://github.com/Miiichael6/administrador-de-proyectos",
   },
 ];

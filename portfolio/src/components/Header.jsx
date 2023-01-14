@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { AiFillHome, AiOutlineInfoCircle } from "react-icons/ai";
+import { AiFillHome, AiOutlineInfoCircle, AiOutlinePaperClip } from "react-icons/ai";
 import { BsLinkedin, BsPersonFill, BsPlusCircleFill } from "react-icons/bs";
 import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import styles from "../styles/TextShadow.module.css";
 import { VscGithubInverted } from "react-icons/vsc";
 import michael from "../imgs/michael.jpeg";
+import CV from "../download/Michael.pdf"
 
 const Header = () => {
   const { pathname } = useLocation();
@@ -100,6 +101,13 @@ const Header = () => {
         </ul>
       </nav>
       <div className="flex flex-col gap-6">
+        <span className="text-3xl hover:text-green-500 transition-colors">
+          <a download="Michael-Canales-CV" href={CV}>
+            <AiOutlinePaperClip />
+          </a>
+            <p className="text-sm text-center font-bold">CV</p>
+        </span>
+
         <span className="text-3xl hover:text-pink-500 transition-colors">
           <a href="https://github.com/Miiichael6" target="_blank">
             <VscGithubInverted />
