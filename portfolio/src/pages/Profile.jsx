@@ -41,8 +41,8 @@ const Profile = () => {
             Full-Stack
           </span>
           orientado a Front-end <br /> si estas aqui es porque seguro te
-          interesaste ver mi Portfolio <br /> y Agradezco el tiempo que te
-          quedes aquí ⚔
+          interesaste a ver mi Portfolio <br /> y Agradezco el tiempo que te
+          quedes aquí ⚔❤
         </p>
 
         <h1

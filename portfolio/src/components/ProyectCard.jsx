@@ -4,7 +4,7 @@ import { AiFillGithub } from "react-icons/ai";
 
 const ProyectCard = ({ photo, title, description, link, gitRepo }) => {
   return (
-    <div className="sm:w-1/2 w-full lg:w-1/3 p-6">
+    <div className="sm:w-1/2 w-full lg:w-1/3 p-6 hover:scale-110 transition-transform">
       <img src={photo} alt="fyt" className="rounded-2xl" />
       <div>
         <h2 className="font-bold text-xl text-blue-400 text-center py-2">
