@@ -33,14 +33,11 @@ const Profile = () => {
           <span className="px-1 font-bold text-xl">¡Saludos!👋🏻</span>
           Soy Michael Canales Palomino, soy de{" "}
           <span className="font-bold">Lima, Perú</span>
-          <br />
-          conocí la programacion a los 17 y quedé maravillado de este mundo
-          <br />
           Actualmente tengo 18 años, soy
           <span className="font-bold px-2 from-pink-400 to-red-400 text-transparent h-20 bg-clip-text bg-gradient-to-r">
             Full-Stack
           </span>
-          orientado a Front-end <br /> si estas aqui es porque seguro te
+          orientandome a desarrollo Front-end <br /> si estas aqui es porque seguro te
           interesaste a ver mi Portfolio <br /> y Agradezco el tiempo que te
           quedes aquí ⚔❤
         </p>
