@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import styles from "../styles/TextShadow.module.css";
 import { VscGithubInverted } from "react-icons/vsc";
 import michael from "../imgs/michael.jpeg";
-import CV from "../download/Michael.pdf"
+import CV from "../download/CV-Michael-Hoja-De-Vida.pdf"
 
 const Header = () => {
   const { pathname } = useLocation();
