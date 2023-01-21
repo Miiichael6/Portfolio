@@ -8,3 +8,10 @@ body {
   overflow-y: hidden;
 }
 
+:root {
+  --form-bg-color: #171717;
+}
+
+.bg-form {
+  background-color: var(--form-bg-color);
+}

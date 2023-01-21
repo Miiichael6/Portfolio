@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@madzadev/audio-player": "^1.1.11",
+    "@emailjs/browser": "^3.10.0",
     "framer-motion": "7.10.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
