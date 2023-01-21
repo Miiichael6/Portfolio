@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { AiFillHome, AiOutlineInfoCircle, AiOutlinePaperClip } from "react-icons/ai";
+import { AiFillHome, AiOutlinePaperClip } from "react-icons/ai";
+import { MdConnectWithoutContact } from "react-icons/md";
 import { BsLinkedin, BsPersonFill, BsPlusCircleFill } from "react-icons/bs";
 import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import styles from "../styles/TextShadow.module.css";
 import { VscGithubInverted } from "react-icons/vsc";
 import michael from "../imgs/michael.jpeg";
-import CV from "../download/CV-Michael-Hoja-De-Vida.pdf"
+import CV from "../download/CV-Michael-Hoja-De-Vida.pdf";
 
 const Header = () => {
   const { pathname } = useLocation();
@@ -89,7 +90,7 @@ const Header = () => {
             whileHover={{ scale: 1.2, rotate: 20 }}
           >
             <Link to="/contact">
-              <AiOutlineInfoCircle
+              <MdConnectWithoutContact
                 className={`text-3xl hover:text-emerald-300 ${
                   pathname === "/contact"
                     ? `text-white`
@@ -105,7 +106,7 @@ const Header = () => {
           <a download="Michael-Canales-CV" href={CV}>
             <AiOutlinePaperClip />
           </a>
-            <p className="text-sm text-center font-bold">CV</p>
+          <p className="text-sm text-center font-bold">CV</p>
         </span>
 
         <span className="text-3xl hover:text-pink-500 transition-colors">

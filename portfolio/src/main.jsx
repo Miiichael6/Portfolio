@@ -3,7 +3,6 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./index.css";
 import { BrowserRouter as Router } from "react-router-dom";
-import "@madzadev/audio-player/dist/index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <Router>
