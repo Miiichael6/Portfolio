@@ -35,7 +35,9 @@ const RelaxSound = () => {
           <img
             src={portadaDawn}
             alt="takako-album-love-trip"
-            className={`w-12 h-12  ${styles.disco} mb-1`}
+            // ${styles.disco}
+            className={`w-12 h-12 
+             mb-1`}
           />
         ) : (
           <span className="text-black p-3">-</span>
