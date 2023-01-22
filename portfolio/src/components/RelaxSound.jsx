@@ -2,9 +2,9 @@ import React, { useRef, useState } from "react";
 import WABHCD from "../assets/whatABrokenHearCanDo.mp3";
 import { TiMediaPauseOutline, TiMediaPlayReverseOutline } from "react-icons/ti";
 import { TbRepeat } from "react-icons/tb";
-import { motion } from "framer-motion";
 import styles from "../styles/Sound.module.css";
 import takako from "../imgs/editTakako.jpg";
+import Dawn from "../assets/Dawn.mp3"
 
 const RelaxSound = () => {
   const [isPlay, setIsPlay] = useState(false);
@@ -41,7 +41,7 @@ const RelaxSound = () => {
         )}
       </div>
       <div className="flex justify-center gap-3 items-end text-white">
-        <audio src={WABHCD} ref={musicRef}></audio>
+        <audio src={Dawn} ref={musicRef}></audio>
         <button onClick={reproducir}>
           <span className="text-4xl">
             {!isPlay ? <TiMediaPlayReverseOutline /> : <TiMediaPauseOutline />}
