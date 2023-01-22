@@ -5,6 +5,7 @@ import { TbRepeat } from "react-icons/tb";
 import styles from "../styles/Sound.module.css";
 import takako from "../imgs/editTakako.jpg";
 import Dawn from "../assets/Dawn.mp3"
+import portadaDawn from "../imgs/Dawn-portada.jpg"
 
 const RelaxSound = () => {
   const [isPlay, setIsPlay] = useState(false);
@@ -32,7 +33,7 @@ const RelaxSound = () => {
       <div className="flex justify-center">
         {isPlay ? (
           <img
-            src={takako}
+            src={portadaDawn}
             alt="takako-album-love-trip"
             className={`w-12 h-12  ${styles.disco} mb-1`}
           />
