@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import styles from "../styles/Home.module.css";
-import michael from "../imgs/michael.jpeg";
+import michael from "../imgs/michael.png";
 import { IoMdMail } from "react-icons/io";
 
 const Home = () => {

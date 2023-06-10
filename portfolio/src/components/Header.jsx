@@ -6,7 +6,7 @@ import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import styles from "../styles/TextShadow.module.css";
 import { VscGithubInverted } from "react-icons/vsc";
-import michael from "../imgs/michael.jpeg";
+import michael from "../imgs/michael.png";
 import CV from "../download/Michael-CV.pdf";
 
 const Header = () => {
