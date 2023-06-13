@@ -1,6 +1,7 @@
 import fyt from "../imgs/findYourTeacher.png";
 import countriesApp from "../imgs/countriesApp.png";
 import amazingProjects from "../imgs/amazing.png";
+import bad_jokes_app from "../imgs/bad_jokes_app.png"
 
 const projects = [
   {
@@ -33,6 +34,16 @@ const projects = [
     link: "https://youtu.be/S7n1QsrAHQk",
     gitRepo: "https://github.com/Miiichael6/administrador-de-proyectos",
   },
+  {
+    img: bad_jokes_app,
+    title: "BadJokes_app",
+    description:
+      "Una app muy simple de chistes que va pedida desde una api",
+    descriptionEN:
+      "An app very simple about some bad jokes making a request to an api",
+    link: "aún no creado",
+    gitRepo: "aún no creado",
+  }
 ];
 
 export default projects;
