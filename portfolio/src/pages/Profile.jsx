@@ -37,9 +37,9 @@ const Profile = () => {
           <span className="font-bold px-2 from-pink-400 to-red-400 text-transparent h-20 bg-clip-text bg-gradient-to-r">
             Full-Stack
           </span>
-          orientandome a desarrollo Front-end <br /> si estas aqui es porque seguro te
+          si estas aqui es porque seguro te
           interesaste a ver mi Portfolio <br /> y Agradezco el tiempo que te
-          quedes aquí ⚔❤
+          quedes aquí ⚔
         </p>
 
         <h1
