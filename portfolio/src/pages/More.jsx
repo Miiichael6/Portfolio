@@ -208,7 +208,6 @@ const More = () => {
             </div>
           </div>
         </div>
-
         <div className="sm:mr-20 mb-10">
           <motion.h1
             initial={{ x: -100 }}
