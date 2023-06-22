@@ -17,6 +17,7 @@ import postgrest from "../imgs/postgres.png";
 import sequelize from "../imgs/sequelize.png";
 import fm from "../imgs/framer-motion.png"
 
+
 const More = () => {
   return (
     <motion.div
