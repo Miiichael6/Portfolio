@@ -215,7 +215,7 @@ const More = () => {
             transition={{ duration: 0.4, delay: 0.6 }}
             className="text-2xl sm:text-4xl font-semibold mb-4 text-amber-400"
           >
-            Mis habilidades
+            My Skills
           </motion.h1>
           <motion.p
             className="text-sm sm:text-xl"
