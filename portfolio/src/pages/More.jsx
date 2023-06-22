@@ -214,7 +214,7 @@ const More = () => {
             initial={{ x: -100 }}
             animate={{ x: 0 }}
             transition={{ duration: 0.4, delay: 0.6 }}
-            className="text-3xl sm:text-5xl font-semibold mb-4 text-amber-400"
+            className="text-2xl sm:text-4xl font-semibold mb-4 text-amber-400"
           >
             Mis habilidades
           </motion.h1>
@@ -224,9 +224,11 @@ const More = () => {
             animate={{ x: 0 }}
             transition={{ duration: 0.4, delay: 0.6 }}
           >
-            Soy Full Stack en programacion manejo bases <br />
-            de datos SQL y NoSQL arientandome a ambas <br />
-            ramas con 60% Front-end y 40% Backend
+            Soy Full Stack en programacion <br />
+           Backend manejo bases de datos SQL y NoSQL <br />
+           orientandome haciendo al uso <br />
+           de Librerias y Frameworks Web
+            
           </motion.p>
         </div>
       </div>

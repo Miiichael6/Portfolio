@@ -41,8 +41,8 @@ const projects = [
       "Una app muy simple de chistes que va pedida desde una api",
     descriptionEN:
       "An app very simple about some bad jokes making a request to an api",
-    link: "aún no creado",
-    gitRepo: "aún no creado",
+    link: "badjokes-eosin.vercel.app",
+    gitRepo: "https://github.com/Miiichael6/BadJokesApp",
   }
 ];
 
