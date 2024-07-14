@@ -102,12 +102,12 @@ const Header = () => {
         </ul>
       </nav>
       <div className="flex flex-col gap-6">
-{/*         <span className="text-3xl hover:text-green-500 transition-colors">
+        {/* <span className="text-3xl hover:text-green-500 transition-colors">
           <a download="Michael-Canales-CV" href={CV}>
             <AiOutlinePaperClip />
           </a>
-          <p className="text-sm text-center font-bold">CV</p> */}
-        </span>
+          <p className="text-sm text-center font-bold">CV</p>
+        </span> */}
 
         <span className="text-3xl hover:text-pink-500 transition-colors">
           <a href="https://github.com/Miiichael6" target="_blank">
