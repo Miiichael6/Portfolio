@@ -12,7 +12,7 @@ const ProyectCard = ({ photo, title, description, link, gitRepo }) => {
         </h2>
         <p className="text-base">{description}</p>
         <div className="flex gap-3">
-          <a
+          {/* <a
             className="text-sm text-sky-600 hover:underline"
             href={link}
             target="_blank"
@@ -21,7 +21,7 @@ const ProyectCard = ({ photo, title, description, link, gitRepo }) => {
             <span>
               <BsYoutube className="inline text-red-700 ml-1" />
             </span>
-          </a>
+          </a> */}
           <a
             className="text-sm text-sky-600 hover:underline"
             href={gitRepo}

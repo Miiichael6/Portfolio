@@ -21,18 +21,9 @@ import fm from "../imgs/framer-motion.png"
 const More = () => {
   return (
     <motion.div
-      initial={{
-        opacity: 0,
-        y: "-100vh",
-      }}
-      animate={{
-        opacity: 1,
-        y: "0vh",
-      }}
-      exit={{
-        opacity: 0,
-        y: "110vh",
-      }}
+      initial={{ opacity: 0, y: "-100vh" }}
+      animate={{ opacity: 1, y: "0vh" }}
+      exit={{ opacity: 0, y: "110vh" }}
       transition={{ type: "spring",duration: 0.4 }}
       className="relative h-screen w-full"
     >

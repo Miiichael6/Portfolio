@@ -15,7 +15,6 @@ function App() {
     <div className="h-screen relative text-white">
       <XHeader />
       <Header />
-
       <RelaxSound />
       <div className="h-screen bg-black flex justify-center">
         <AnimatePresence mode="wait">
